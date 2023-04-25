@@ -1,0 +1,42 @@
+.cart {
+    width: 100%;
+    background-color: white;
+    margin-top: 5vh;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 5vh 0;
+}
+
+.doctor_info {
+    padding: 0vh 0 4vh 0;
+}
+
+.content {
+}
+
+.title {
+    font-weight: bold;
+    padding: 1vh 0 1vh 0;
+}
+
+.description {
+    padding: 1vh 0 4vh 0;
+}
+
+.media {
+    width: 100%;
+    height: 100%;
+}
+
+.media_img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.others {
+    font-weight: lighter;
+}

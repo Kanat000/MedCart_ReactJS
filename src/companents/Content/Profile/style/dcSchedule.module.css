@@ -1,0 +1,40 @@
+.schedule {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 0.5vw;
+}
+
+.daySchedule {
+    display: grid;
+    text-align: center;
+}
+
+.day {
+    border: 1px solid black;
+    padding: 1vh 0 1vh 0;
+}
+
+.today {
+    background-color: var(--primary_color_blue);
+    color: white;
+}
+
+.time {
+    padding: 0.5vh 0 0.5vh 0;
+    margin-top: 1vh;
+    border: 0.1vh dashed black;
+    cursor: pointer;
+}
+
+.time:hover {
+    border: 0.1vh solid black;
+}
+
+.Free {
+    background-color: #93ff93;
+}
+
+.notFree {
+    background-color: #ff8f8f;
+}

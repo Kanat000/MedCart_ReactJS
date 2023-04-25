@@ -1,0 +1,26 @@
+.review {
+    margin-top: 4vh;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 2fr 4fr 5fr 4fr;
+}
+
+.date {
+    display: grid;
+    align-items: center;
+    font-weight: lighter;
+}
+
+.rating {
+    display: grid;
+    align-items: center;
+}
+
+.body {
+    padding: 2vh 1vw 2vh 1vw;
+    margin-top: 2vh;
+}
+
+

@@ -1,0 +1,35 @@
+.main {
+    max-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 97%;
+    height: 96vh;
+    margin: 2vh 0 2vh 1%;
+}
+
+.header {
+    width: 74.5%;
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 7vh;
+    display: grid;
+    align-items: center;
+    position: fixed;
+}
+
+.pageName {
+    margin-left: 3vw;
+    font-size: 1em;
+}
+
+.content {
+    width: 100%;
+    height: 88.4vh;
+    margin-top: 0.6vh;
+}
+
+.resultSection {
+    margin-top: 2vh;
+}

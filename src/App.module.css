@@ -1,0 +1,7 @@
+.app{
+  background-color: var(--background_color);
+}
+.container{
+  display: grid;
+  grid-template-columns: 2fr 7fr;
+}

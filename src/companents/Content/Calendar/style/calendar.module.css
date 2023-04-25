@@ -1,0 +1,59 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 20fr 1fr;
+}
+
+.calendarContainer {
+    min-height: 85vh;
+    margin-top: 10vh;
+    background-color: white;
+    padding: 0 3vw;
+}
+
+.weekChangeBtns {
+    width: 100%;
+}
+
+.weekChangeBtns div {
+    width: 30%;
+    margin: 5vh auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1vw;
+}
+
+.changeBtn {
+    background-color: white;
+    color: var(--primary_color_blue);
+    border: 0.1vh solid var(--primary_color_blue);
+    padding: 1vh 0;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.changeBtn:hover {
+    background-color: var(--primary_color_blue);
+    color: white;
+    transition: 500ms ease-in-out;
+}
+
+.editWeek {
+    width: 40%;
+    margin: auto;
+}
+
+.editWeekBtn {
+    background-color: white;
+    color: #ca7f0e;
+    border: 0.2vh solid #ca7f0e;
+    width: 100%;
+    padding: 1vh 0;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.editWeekBtn:hover {
+    background-color: #ca7f0e;
+    color: white;
+    transition: 200ms ease-in-out;
+}

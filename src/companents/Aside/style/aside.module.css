@@ -1,0 +1,21 @@
+.aside{
+    height: 100vh;
+}
+.container{
+    width: 95%;
+    margin: 2vh 0 2vh 1.2vw;
+    background-color: white;
+    height: 96vh;
+    display: grid;
+    grid-template-rows: 2fr 6fr 3fr;
+}
+.logo{
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: fantasy;
+    font-size: 1.3em;
+    color: var(--primary_color_blue);
+}
+

@@ -1,0 +1,24 @@
+.container{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-column-gap: 3vw;
+}
+.search_box_block{
+    width: 100%;
+}
+.search{
+    width: 100%;
+    margin: auto;
+    padding: 1.5vh 0 1.5vh 1vw;
+    border: 0.1vh solid #d5d5d5;
+}
+.search_btn_block{
+    width:100%;
+}
+.searchBtn{
+    width: 100%;
+    background-color: var(--primary_color_blue);
+    color: white;
+    border: 0;
+    padding: 1.5vh 0 1.5vh 0;
+}

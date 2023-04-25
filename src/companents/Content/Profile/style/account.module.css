@@ -1,0 +1,48 @@
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr 3fr;
+}
+
+.imgGrid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgBlock {
+    background-color: burlywood;
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 0.1vw solid black;
+}
+
+.img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.fullNameGrid {
+    display: grid;
+    align-items: center;
+}
+
+.fullNameGrid span {
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+.followGrid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.followBtn {
+    padding: 1vh 1vw 1vh 1vw;
+    border: 1px solid gray;
+    background-color: white;
+}

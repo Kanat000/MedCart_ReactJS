@@ -1,0 +1,57 @@
+
+.Container {
+    padding: 10vh 0 0 0;
+}
+
+.podContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 1vw;
+}
+
+.nav {
+    background-color: white;
+    height: 86vh;
+}
+
+.con {
+    height: 86vh;
+}
+
+.setMenuBlock {
+    width: 80%;
+    margin: 10vh auto 0 auto;
+}
+
+.setMenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.setMenuItem {
+    height: 6vh;
+    font-family: monospace;
+    font-size: 1.2em;
+    margin-top: 1vh;
+    padding: 0 2vw;
+    display: grid;
+    align-items: center;
+}
+
+.setMenuItem a {
+    text-decoration: none;
+}
+
+.setMenuItem a:hover {
+    color: var(--primary_color_blue);
+}
+
+.active {
+    background-color: var(--primary_color_blue);
+}
+
+.active a, .active a:hover {
+    color: white;
+}

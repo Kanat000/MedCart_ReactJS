@@ -1,0 +1,86 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+.noteContainer {
+    padding: 10vh 0 10vh 0;
+}
+
+.noteBlock {
+    width: 100%;
+    background-color: white;
+    border-radius: 1vh;
+    padding: 2vh 0 3vh 0;
+    margin-top: 3vh;
+    display: grid;
+    grid-template-columns: 1fr 25fr 1fr;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.noteTitle {
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+.datetime {
+    width: 100%;
+    text-align: right;
+    font-size: 0.8em;
+    font-weight: normal;
+    color: #8a8a8a;
+}
+
+.datetime span {
+    margin-right: 1vw;
+}
+
+.noteDescription {
+    font-size: 0.9em;
+    margin-top: 2vh;
+}
+
+.actions {
+    width: 100%;
+    margin-top: 3vh;
+}
+
+.actionButtons {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1vw;
+}
+
+.actionButtons button {
+    border: 0;
+    outline: none;
+    padding: 1.5vh 0 1.5vh 0;
+    font-size: 0.95em;
+    border-radius: 2vh;
+    cursor: pointer;
+}
+
+.done {
+    background-color: var(--primary_color_blue);
+    color: white;
+}
+
+.set_aside {
+    background-color: whitesmoke;
+}
+
+.doneResultBlock {
+    width: 100%;
+    height: 5.5vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #17a717;
+    color: white;
+    border-radius: 2vh;
+}

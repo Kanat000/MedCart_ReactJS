@@ -1,0 +1,9 @@
+.home{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    padding: 15vh 0 10vh 0;
+}
+.NavBar{
+    width: 100%;
+    margin-top: 10vh;
+}

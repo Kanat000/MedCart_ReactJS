@@ -1,0 +1,34 @@
+.fullName {
+    font-size: 1.4em;
+    font-weight: bolder;
+    font-family: Calibri;
+}
+
+.phone {
+    font-size: 1em;
+    font-weight: lighter;
+    margin-top: 0.7vh;
+}
+
+.address {
+    font-size: 1em;
+    font-weight: lighter;
+    margin-top: 0.7vh;
+}
+
+.status {
+    margin-top: 1vh;
+    font-size: 1em;
+}
+
+.experience {
+    font-size: 1em;
+    margin-top: 1vh;
+    font-weight: bolder;
+}
+
+.specialization {
+    color: #8b8b8b;
+    font-size: 1em;
+    margin-top: 1vh;
+}
