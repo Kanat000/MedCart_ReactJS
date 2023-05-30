@@ -43,6 +43,15 @@
 
 .followBtn {
     padding: 1vh 1vw 1vh 1vw;
-    border: 1px solid gray;
+    border: 1px solid var(--primary_color_blue);
     background-color: white;
+    color: var(--primary_color_blue);
+    transition: 300ms ease-in-out;
+}
+
+.followBtn:hover {
+    background-color: var(--primary_color_blue);
+    color: white;
+    cursor: pointer;
+    border-radius: 1vh;
 }

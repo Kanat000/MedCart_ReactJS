@@ -22,7 +22,7 @@
 .imgBlock {
     height: 3vw;
     width: 3vw;
-    background-color: burlywood;
+    background-color: #f3f3f3;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -64,13 +64,20 @@
 .EnrollGrid {
     display: grid;
     align-items: center;
+    text-align: center;
 }
 
 .EnrollBtn {
     background-color: var(--primary_color_blue);
     color: white;
-    width: 100%;
+    width: 80%;
     padding: 1vh 0 1vh 0;
     border: 0;
+    cursor: pointer;
+    transition: 500ms ease-in-out;
 }
 
+.EnrollBtn:hover {
+    width: 100%;
+    border-radius: 1vh;
+}

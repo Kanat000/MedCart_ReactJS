@@ -8,7 +8,7 @@
     width: 95%;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 2fr 0.5fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr 3fr 1fr 1fr;
     padding: 3vh 0 3vh 0;
 }
 
@@ -36,6 +36,10 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.infoBlock {
+    padding-left: 1vw;
 }
 
 .name {

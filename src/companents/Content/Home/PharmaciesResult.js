@@ -6,13 +6,13 @@ function PharmaciesResult(props) {
             <div className={clinicResultStyle.pharmFrame}>
                 <div className={clinicResultStyle.imgBlock}>
                     <div className={clinicResultStyle.imgFrame}>
-                        <img src={props.pharmacy.img} alt={props.pharmacy.name} className={clinicResultStyle.img}/>
+                        <img src={props.pharmacy.photo} alt={props.pharmacy.name} className={clinicResultStyle.img}/>
                     </div>
                 </div>
                 <div className={clinicResultStyle.infoBlock}>
                     <div className={clinicResultStyle.name}>{props.pharmacy.name}</div>
-                    <div className={clinicResultStyle.time}>{props.pharmacy.work_time}</div>
-                    <div className={clinicResultStyle.days}>{props.pharmacy.contacts}</div>
+                    <div className={clinicResultStyle.time}>{props.pharmacy.workTime}</div>
+                    <div className={clinicResultStyle.days}>{props.pharmacy.phone}</div>
 
                 </div>
                 <div className={clinicResultStyle.city}>
@@ -22,7 +22,7 @@ function PharmaciesResult(props) {
                     {props.pharmacy.address}
                 </div>
                 <div className={clinicResultStyle.view}>
-                    <button className={clinicResultStyle.viewBtn}>View</button>
+                    
                 </div>
             </div>
         </div>

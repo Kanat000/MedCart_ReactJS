@@ -12,11 +12,11 @@
 
 .nav {
     background-color: white;
-    height: 86vh;
+    min-height: 86vh;
 }
 
 .con {
-    height: 86vh;
+    min-height: 86vh;
 }
 
 .setMenuBlock {

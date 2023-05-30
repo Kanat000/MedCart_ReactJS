@@ -24,10 +24,20 @@ function SignInContainer() {
         }
     }
     let sendInfo = (state) => {
+        // if (login(state).length !== 0) {
+        //     let isPatient = JSON.parse(localStorage.getItem('user')).role === 'patient'
+        //     if (isPatient) history.push('/h/doctors')
+        //     else history.push('/h/d/patients')
+        //     window.location.reload()
+        //     console.log(usersAuth)
+        // }
         login(state).then((r) => {
             console.log(r)
+            let isPatient = JSON.parse(localStorage.getItem('user')).role === 2
+            if (isPatient) history.push('/h/doctors')
+            else history.push('/h/d/patients')
+            window.location.reload()
         })
-        history.push('/h')
     }
     return <SignIn state={signInState}
                    setState={inputChanges}

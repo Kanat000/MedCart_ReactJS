@@ -2,26 +2,49 @@ import reviewStyle from '../style/review.module.css'
 import accountStyle from "../style/account.module.css";
 import doctor_img from "../../../../assets/imgs/doctor_img.jpg";
 import {Rating} from "react-simple-star-rating";
+import {useEffect, useState} from "react";
+import {getDoctorInfo} from "../../../../service/record.service";
+import Account from "../Account";
+import {getUserRole} from "../../../../Store/ActionCreator";
 
-function Review() {
+function Review(props) {
+    let dateArr = String(props.review.createDate).split('T')
+    let [img, setImg] = useState()
+    let [fullName, setFullName] = useState()
+    let pathName = window.location.pathname
+    let isPatientHistory = getUserRole() === 2 && pathName === '/history'
+    useEffect(() => {
+        getDoctorInfo(props.review.patientId).then((response) => {
+                setImg(<img src={response.data.photo} alt={doctor_img.name}
+                            className={accountStyle.img}/>)
+                setFullName(response.data.fullName)
+            }
+        )
+    }, [props.review])
     return (
-        <div className={reviewStyle.review}>
-            <div className={reviewStyle.header}>
-                <div className={accountStyle.imgGrid}>
-                    <div className={accountStyle.imgBlock}><img src={doctor_img} alt={doctor_img.name}
-                                                                className={accountStyle.img}/></div>
+        <div className={reviewStyle.review}
+             style={isPatientHistory ? {
+                 display: 'grid',
+                 gridRowGap: '4vh',
+                 marginTop: "7vh",
+                 marginBottom: "7vh"
+             } : {}}>
+            {isPatientHistory ? <Account dc={props.review.doctorId}/> : ''}
+            <div style={isPatientHistory ? {background: '#efefef', padding: "3vh"} : {}}>
+                <div className={reviewStyle.header}>
+                    <div className={accountStyle.imgGrid}>
+                        <div className={accountStyle.imgBlock}>{img}</div>
+                    </div>
+                    <div className={accountStyle.fullNameGrid}>
+                        <span>{fullName}</span>
+                    </div>
+                    <div className={reviewStyle.date}>{dateArr[1].slice(0, -7)} {dateArr[0]}</div>
+                    <div className={reviewStyle.rating}><Rating size="3.5vh" initialValue={props.review.rating / 2}
+                                                                readonly='readonly'/></div>
                 </div>
-                <div className={accountStyle.fullNameGrid}>
-                    <span>Andrey Sergeyov</span>
+                <div className={reviewStyle.body}>
+                    {props.review.reviewText}
                 </div>
-                <div className={reviewStyle.date}>12:02 15/04/2023</div>
-                <div className={reviewStyle.rating}><Rating size="3.5vh"/></div>
-            </div>
-            <div className={reviewStyle.body}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi assumenda cumque debitis dolore
-                eveniet expedita explicabo illo iure magnam maiores non nostrum nulla odio perspiciatis placeat possimus
-                quaerat quo sequi ut veniam, vero, voluptatem voluptatum? Asperiores assumenda consequatur dolore
-                laudantium maxime neque nulla placeat, sed, soluta, ut vero voluptate.
             </div>
         </div>
     )

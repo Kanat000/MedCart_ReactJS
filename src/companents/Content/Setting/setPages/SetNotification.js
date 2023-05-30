@@ -3,11 +3,11 @@ import NoteCheckBoxBlock from "./NoteCheckBoxBlock";
 import NoteSwitchBlock from "./NoteSwitchBlock";
 
 function SetNotification(props) {
-    let noteChecks = props.setting.settings.notifications.map((n, index) => {
-        return <NoteCheckBoxBlock note={n} index={index} setNoteCheckBox={props.setting.setNoteCheckBox}/>
+    let noteChecks = props.setting.notifications.map((n, index) => {
+        return <NoteCheckBoxBlock note={n} index={index} setNoteCheckBox={props.setNoteCheckBox}/>
     })
-    let allowSwitch = props.setting.settings.allows.map((allow, index) => {
-        return <NoteSwitchBlock allow={allow} index={index} setNoteAllow={props.setting.setNoteAllow}/>
+    let allowSwitch = props.setting.allows.map((allow, index) => {
+        return <NoteSwitchBlock allow={allow} index={index} setNoteAllow={props.setNoteAllow}/>
     })
     return (
         <div className={setNotificationStyle.container}>

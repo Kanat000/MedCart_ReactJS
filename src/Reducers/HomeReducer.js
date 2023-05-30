@@ -1,8 +1,21 @@
-import {InitialState} from "../Store/InitialState";
+import {GetPatientHomeDataAction} from "../Store/Actions";
 
-let HomeState = InitialState.home;
+let HomeState = {
+    data: {
+        doctors: [],
+        clinics: [],
+        medicament: [],
+        pharmacies: []
+    },
+    loading: true
+};
 
 const HomeReducer = (state = HomeState, action) => {
-    return state
+    switch (action.type) {
+        case GetPatientHomeDataAction:
+            return {...state, data: action.data, loading: false}
+        default:
+            return state
+    }
 }
 export default HomeReducer

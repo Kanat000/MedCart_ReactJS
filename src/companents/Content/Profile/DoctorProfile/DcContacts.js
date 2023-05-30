@@ -1,25 +1,25 @@
 import dcProfileStyle from "../style/doctorProfile.module.css";
 
-function DcContacts() {
+function DcContacts(props) {
     return (
         <div className={dcProfileStyle.frame}>
             <div className={dcProfileStyle.title}>Contacts</div>
             <div className={dcProfileStyle.dcContacts}>
                 <div className={dcProfileStyle.contactItem}>
+                    <span className={dcProfileStyle.contactType}>Address:</span>
+                    <span className={dcProfileStyle.contactValue}>{props.contacts.address}</span>
+                </div>
+                <div className={dcProfileStyle.contactItem}>
+                    <span className={dcProfileStyle.contactType}>City:</span>
+                    <span className={dcProfileStyle.contactValue}>{props.contacts.city}</span>
+                </div>
+                <div className={dcProfileStyle.contactItem}>
                     <span className={dcProfileStyle.contactType}>Phone number:</span>
-                    <span className={dcProfileStyle.contactValue}>87785542262</span>
+                    <span className={dcProfileStyle.contactValue}>{props.contacts.phone}</span>
                 </div>
                 <div className={dcProfileStyle.contactItem}>
                     <span className={dcProfileStyle.contactType}>Email address:</span>
-                    <span className={dcProfileStyle.contactValue}>super_doc@Gmail.com</span>
-                </div>
-                <div className={dcProfileStyle.contactItem}>
-                    <span className={dcProfileStyle.contactType}>Telegram:</span>
-                    <span className={dcProfileStyle.contactValue}>@super_dc</span>
-                </div>
-                <div className={dcProfileStyle.contactItem}>
-                    <span className={dcProfileStyle.contactType}>Instagram:</span>
-                    <span className={dcProfileStyle.contactValue}>@super_doctor_11</span>
+                    <span className={dcProfileStyle.contactValue}>{props.contacts.email}</span>
                 </div>
 
             </div>

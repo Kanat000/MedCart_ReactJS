@@ -1,4 +1,4 @@
-import {ChangeNoteDoneBtnAC, ChangeSetAsideBtnAC} from "../../../Store/ActionCreator";
+import {GetNotificationData} from "../../../Store/ActionCreator";
 import {connect} from "react-redux";
 import Notification from "./Notification";
 import {withRouter} from "react-router-dom";
@@ -11,15 +11,20 @@ let mapStateToProps = (state) => {
 
 let mapDispatchToProps = (dispatch) => {
     return {
-        changeDoneStatus: (index) => {
-            let action = ChangeNoteDoneBtnAC(index)
-            dispatch(action)
-        },
-
-        changeSetAsideStatus: (index) => {
-            let action = ChangeSetAsideBtnAC(index)
+        GetNotificationData: (userId, setLoading) => {
+            let action = GetNotificationData(userId, setLoading)
             dispatch(action)
         }
+
+        // changeDoneStatus: (index) => {
+        //     let action = ChangeNoteDoneBtnAC(index)
+        //     dispatch(action)
+        // },
+        //
+        // changeSetAsideStatus: (index) => {
+        //     let action = ChangeSetAsideBtnAC(index)
+        //     dispatch(action)
+        // }
 
     }
 }

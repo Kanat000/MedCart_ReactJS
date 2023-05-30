@@ -1,22 +1,24 @@
-import {InitialState} from "../Store/InitialState";
-import {NoteDoneAction, NoteSetAsideAction} from "../Store/Actions";
+// import {InitialState} from "../Store/InitialState";
+import {GetNotificationDataAction} from "../Store/Actions";
 
-let NoteState = InitialState.notification;
+let NoteState = {
+    data: []
+};
 
 const NoteReducer = (state = NoteState, action) => {
-    let stateCp = [...state]
-    stateCp[action.index] = {...state[action.index]}
+    // stateCp[action.index] = {...state[action.index]}
     switch (action.type) {
-        case NoteDoneAction:
-            stateCp[action.index].done = true
-            break;
-        case NoteSetAsideAction:
-            stateCp[action.index].feedback = false
-            stateCp[action.index].done = false
-            break;
+        // case NoteDoneAction:
+        //     stateCp[action.index].done = true
+        //     break;
+        // case NoteSetAsideAction:
+        //     stateCp[action.index].feedback = false
+        //     stateCp[action.index].done = false
+        //     break;
+        case GetNotificationDataAction:
+            return {...state, data: action.data}
         default:
-            break;
+            return {...state};
     }
-    return stateCp
 }
 export default NoteReducer

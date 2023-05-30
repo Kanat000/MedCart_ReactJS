@@ -1,18 +1,32 @@
-import {InitialState} from "../Store/InitialState";
-import {SettingAccountAction} from "../Store/Actions";
+import {
+    GetDoctorReviewAction,
+    GetPatientRecord,
+    GetProfileDataAction,
+    SetNothingProfile,
+    SettingAccountAction
+} from "../Store/Actions";
 
-let ProfileState = InitialState.profile;
+let ProfileState = {
+    data: {},
+    record: [],
+    review: []
+};
 
 const ProfileReducer = (state = ProfileState, action) => {
-    let stateCp = {...state}
     switch (action.type) {
         case SettingAccountAction:
-            stateCp = action.profile
-            break;
+            return {...state}
+        case GetProfileDataAction:
+            return {...state, data: action.data}
+        case GetPatientRecord:
+            return {...state, record: action.data}
+        case GetDoctorReviewAction:
+            return {...state, review: action.data}
+        case SetNothingProfile:
+            return {...state}
         default:
-            break;
+            return state
     }
-    return stateCp
 }
 
 export default ProfileReducer

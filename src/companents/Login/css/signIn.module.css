@@ -68,6 +68,17 @@
     border: 0.1vw solid #b4b3b3;
 }
 
+.textArea {
+    width: calc(100% - 1vw);
+    height: 30vh;
+    resize: none;
+    padding: 1vh 0 1vh 1vw;
+    font-size: 1em;
+    margin: 1vh 0 1vh 0;
+    border: 0.1vw solid #b4b3b3;
+    border-radius: 1vh;
+}
+
 .backBtn {
     width: 100%;
     background-color: #df4b2a;

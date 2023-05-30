@@ -85,6 +85,23 @@
     color: black;
 }
 
+.textArea {
+    width: calc(100% - 1vw);
+    height: 30vh;
+    resize: none;
+    padding: 1vh 1vw 1vh 1vw;
+    font-size: 1em;
+    margin: 1vh 0 1vh 0;
+    border: 0.1vw solid #b4b3b3;
+    border-radius: 1vh;
+    outline: none;
+}
+
+.textArea:focus {
+    border: 0.1vh solid black;
+    color: black;
+}
+
 .closed {
     color: black;
     border-bottom: 1px solid black;
@@ -92,7 +109,7 @@
 }
 
 .saveBtn {
-    margin: 10vh auto 0 auto;
+    margin: 10vh auto 10vh auto;
     width: 40%;
     padding: 1.5vh;
     background-color: var(--primary_color_blue);

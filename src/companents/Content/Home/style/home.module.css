@@ -1,9 +1,18 @@
-.home{
+.home {
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
     padding: 15vh 0 10vh 0;
 }
-.NavBar{
+
+.loadingBlock {
+    height: 50vh;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavBar {
     width: 100%;
     margin-top: 10vh;
 }

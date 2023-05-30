@@ -2,14 +2,14 @@ import profileStyle from '../style/profile.module.css'
 import ImgProfile from "../ImgProfile";
 import textInfoStyle from "../style/textInfoProfile.module.css";
 
-function DcMainInfo() {
+function DcMainInfo(props) {
     return (
         <div className={profileStyle.mainInfo}>
-            <ImgProfile/>
+            <ImgProfile photo={props.mainInfo.photo}/>
             <div className={textInfoStyle.textContainer}>
-                <div className={textInfoStyle.fullName}>Kairat Nurtas</div>
-                <div className={textInfoStyle.specialization}>Ultrasound doctor</div>
-                <div className={textInfoStyle.experience}>Total experience(year): 3</div>
+                <div className={textInfoStyle.fullName}>{props.mainInfo.fullName}</div>
+                <div className={textInfoStyle.specialization}>{props.mainInfo.speciality}</div>
+                <div className={textInfoStyle.experience}>Total experience(year): {props.mainInfo.experience}</div>
                 <div className={textInfoStyle.status}>Doctor</div>
             </div>
         </div>

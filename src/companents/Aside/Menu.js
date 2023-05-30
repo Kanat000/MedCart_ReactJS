@@ -4,9 +4,11 @@ import {menuArr} from "./MenuArr";
 
 let Menu = (props) => {
     let location = props.history.location
-    let nav = menuArr.map((menu) => {
+    let arr = JSON.parse(localStorage.getItem('user')).role === 2 ? menuArr.patient : menuArr.doctor
+    let nav = arr.map((menu) => {
+        let itemNum = location.pathname.split('/')[1] === 'd' ? 2 : 1
         return <Link to={menu.link}>
-            <li className={[menuStyle.item, location.pathname.split('/')[1] === menu.link.split('/')[1] ? menuStyle.active : ''].join(' ')}>
+            <li className={[menuStyle.item, location.pathname.split('/')[itemNum] === menu.link.split('/')[itemNum] ? menuStyle.active : ''].join(' ')}>
                 <div></div>
                 <div>
                     {menu.icon}

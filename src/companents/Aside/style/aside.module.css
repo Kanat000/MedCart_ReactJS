@@ -1,15 +1,17 @@
-.aside{
+.aside {
     height: 100vh;
 }
-.container{
+
+.container {
     width: 95%;
     margin: 2vh 0 2vh 1.2vw;
     background-color: white;
     height: 96vh;
     display: grid;
-    grid-template-rows: 2fr 6fr 3fr;
+    grid-template-rows: 5fr 6fr 3fr;
 }
-.logo{
+
+.logo {
     display: grid;
     width: 100%;
     justify-content: center;

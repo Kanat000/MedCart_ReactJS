@@ -4,6 +4,9 @@ import {Link, Route} from "react-router-dom";
 import FirstStep from "./FirstStep";
 import SecondStep from "./SecondStep";
 import ThirdStep from "./ThirdStep";
+import FourthStep from "./FourthStep";
+import LastStep from "./LastStep";
+import AboutStep from "./AboutStep";
 
 function SignUp(props) {
     return (
@@ -23,6 +26,13 @@ function SignUp(props) {
                             <Route path='/signUp/step-2'><SecondStep state={props.state}
                                                                      setState={props.setState}/></Route>
                             <Route path='/signUp/step-3'><ThirdStep state={props.state}
+                                                                    setState={props.setState}/></Route>
+                            <Route path='/signUp/step-4'><FourthStep state={props.state}
+                                                                     setState={props.setState}
+                                                                     saveInfo={props.saveInfo}/></Route>
+                            <Route path='/signUp/step-5'><LastStep state={props.state}
+                                                                   setState={props.setState}/></Route>
+                            <Route path='/signUp/step-6'><AboutStep state={props.state}
                                                                     setState={props.setState}
                                                                     saveInfo={props.saveInfo}/></Route>
                             {/*<div className={signInStyle.error}>Incorrect email address</div>*/}
