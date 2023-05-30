@@ -1,6 +1,7 @@
 # MedCart_ReactJS
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/25423296/163456776-7f95b81a-f1ed-45f7-b7ab-8fa810d529fa.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
-  <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
-</picture>
+![image](https://github.com/Kanat000/MedCart_ReactJS/assets/81953174/e8fd4324-63e2-47f3-84c2-d3c071c9901a)
+![image](https://github.com/Kanat000/MedCart_ReactJS/assets/81953174/a849e7d0-cb71-48e5-b2f3-8a04b3c9bf8a)
+![image](https://github.com/Kanat000/MedCart_ReactJS/assets/81953174/a949366d-47fd-4723-b4a7-03e2573fff25)
+![image](https://github.com/Kanat000/MedCart_ReactJS/assets/81953174/7d306cf2-e964-4dee-85c8-33ae82fea932)
+![image](https://github.com/Kanat000/MedCart_ReactJS/assets/81953174/05ab1345-fe8b-4cba-980d-c1c749a27b8f)
+![image](https://github.com/Kanat000/MedCart_ReactJS/assets/81953174/bd315292-49f4-48ef-91f2-6c351b0c77ba)
