@@ -8,7 +8,7 @@ import LoadingPage from "../Main/LoadingPage";
 
 function DoctorHistory() {
     let [recordList, setRecordList] = useState({data: [], loading: true})
-    useState(() => {
+    useEffect(() => {
         getDoctorHistory(getUserId()).then((response) => {
             let recordArr = response.data.map((record) => {
                     return <Cart record={record}/>
