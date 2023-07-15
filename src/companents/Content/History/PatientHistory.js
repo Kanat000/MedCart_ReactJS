@@ -7,7 +7,7 @@ import LoadingPage from "../Main/LoadingPage";
 
 function PatientHistory() {
     let [reviewList, setReviewList] = useState({data: [], loading: true})
-    useState(() => {
+    useEffect(() => {
         getPatientHistory(getUserId()).then((response) => {
             let reviewArr = response.data.map((review) => {
                     return <Review review={review}/>
